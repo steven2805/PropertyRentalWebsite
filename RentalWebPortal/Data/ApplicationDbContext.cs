@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using RentalWebPortal.Models;
 
 namespace RentalWebPortal.Data
 {
@@ -11,8 +12,13 @@ namespace RentalWebPortal.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+    
+
         }
 
+        public DbSet<Property> Propertys { get; set; }
 
-    }
+        
+
+        }
 }
