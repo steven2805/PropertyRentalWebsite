@@ -12,5 +12,7 @@ namespace RentalWebPortal.Data
             : base(options)
         {
         }
+
+
     }
 }
