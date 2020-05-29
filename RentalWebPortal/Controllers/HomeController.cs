@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RentalWebPortal.Data;
 using RentalWebPortal.Models;
 
 namespace RentalWebPortal.Controllers
@@ -12,7 +13,7 @@ namespace RentalWebPortal.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+          return View();
         }
 
         public IActionResult Privacy()

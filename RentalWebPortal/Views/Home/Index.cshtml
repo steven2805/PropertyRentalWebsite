@@ -2,8 +2,40 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+
+<div style="background-image: url('https://happyyouhappyfamily.com/wp-content/uploads/2019/04/banner-bluebonnets-1600x533.jpg');">
+    <br style=“line-height:25;”>
+   
+    <form asp-action="Index" asp-controller="Properties" class="mx-auto" style="width: 500px;">
+        <h3 class="bg-success text-white">FIND YOUR DREAM PROPERTY TODAY</h3>
+        
+        @*<div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="input-County">County</span>
+            </div>
+            <input type="text" class="form-control" aria-label="County" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="input-City">City/Town</span>
+            </div>
+            <input type="text" class="form-control" aria-label="City/Town" aria-describedby="inputGroup-sizing-default">
+        </div>*@
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="input-Postcode">Postcode</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Postcode Search" aria-label="Postcode" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <input type="submit" class="btn btn-danger" />
+    </form>
+
+    <br/>
+    <br/>
+    <br/>
+</div>
+<br/>
+
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -12,21 +44,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg" class="d-block w-100" alt="...">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.W1nWVg-2G_x5lcjza2gMzgHaEK?w=300&h=168&c=7&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h5>4 Bedroom Detached house </h5>
+                    <p>bla bla boring house stuff</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.xoPod76wo3EdK5bOZvijSQHaFB?w=274&h=177&c=7&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.PGnAt6k2EH8VOJQZweE63wHaEK?w=261&h=160&c=7&o=5&dpr=1.5&pid=1.7" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

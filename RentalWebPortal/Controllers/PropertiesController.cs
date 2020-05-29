@@ -22,7 +22,7 @@ namespace RentalWebPortal.Controllers
         // GET: Properties
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Propertys.ToListAsync());
+            return View(await _context.Propertys.OrderByDescending(listing => listing.PremiumListing).ToListAsync());
         }
 
         // GET: Properties/Details/5

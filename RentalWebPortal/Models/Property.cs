@@ -16,6 +16,7 @@ namespace RentalWebPortal.Models
         public string Description { get; set; }
         public decimal Cost { get; set; }
 
+        //Simple listing date 
         public DateTime ListedDate { get; set; }
 
         public List<FilePath> ImagePath { get; set; }
